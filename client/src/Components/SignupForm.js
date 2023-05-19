@@ -43,7 +43,7 @@ export const SignUp = () => {
             required
           />
        
-          <button type="submit">Submit</button>
+          <button type="submit">Sign Up</button>
         </form>
       </div>
     )
