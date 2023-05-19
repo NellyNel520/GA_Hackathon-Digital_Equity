@@ -1,4 +1,5 @@
 import Header from './Components/Header';
+import { SignUp } from './Components/SignupForm';
 import './index.css';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       App
       <Header/>
+      <SignUp/>
     </div>
   );
 }
