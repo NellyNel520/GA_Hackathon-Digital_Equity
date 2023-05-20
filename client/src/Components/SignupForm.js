@@ -1,7 +1,7 @@
 import react, { useState } from 'react';
 import { createUserWithEmailAndPassword } from "firebase/auth"
 import { handleSignUp } from "../firebase"
-import auth  from '../firebase';
+import  {auth}   from '../firebase';
 
 export const SignUp = () => {
 
@@ -28,7 +28,7 @@ export const SignUp = () => {
       }
     } catch (error) {
       console.error(error.message);
-      console.log('Sign up error');
+      console.error('Sign up error:', error);
     }
 
   };
