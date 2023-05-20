@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth"
 import { handleSignUp } from "../firebase"
 import  {auth}   from '../firebase';
 
-export const SignUp = () => {
+export const UserInfo = () => {
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -100,3 +100,4 @@ export const SignUp = () => {
         </div>
       )
   };
+
