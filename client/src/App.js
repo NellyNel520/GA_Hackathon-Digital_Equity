@@ -1,7 +1,6 @@
 import Header from './Components/Header';
-import { SignUp } from './Components/SignupForm';
 import './index.css';
-import app from './firebase_config';
+import app from '../config/firebase_config';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'; 
 import { useState } from 'react';
 
@@ -42,7 +41,6 @@ function App() {
     <div className="App">
       App
       <Header/>
-      <SignUp/>
     </div>
   );
 }
