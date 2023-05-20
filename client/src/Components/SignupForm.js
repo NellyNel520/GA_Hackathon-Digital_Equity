@@ -95,6 +95,7 @@ export const SignUp = () => {
               placeholder="conpassword"
               required
             />
+            <button>Submit</button>
           </form>
         </div>
       )
