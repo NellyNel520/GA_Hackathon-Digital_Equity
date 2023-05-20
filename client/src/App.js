@@ -1,4 +1,4 @@
-import "tailwindcss/tailwind.css";
+
 import Header from './Components/Header';
 import { SignUp } from './Components/SignupForm';
 import { SignIn } from "./Components/Login";
