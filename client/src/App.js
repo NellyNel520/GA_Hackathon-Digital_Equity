@@ -1,5 +1,7 @@
+import "tailwindcss/tailwind.css";
 import Header from './Components/Header';
 import { SignUp } from './Components/SignupForm';
+import { SignIn } from "./Components/Login";
 import './index.css';
 
 
@@ -12,6 +14,7 @@ function App() {
       App
       <Header/>
       <SignUp/>
+      <SignIn />
     </div>
   );
 }
