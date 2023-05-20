@@ -1,3 +1,8 @@
+import react, { useState } from 'react';
+import { createUserWithEmailAndPassword } from "firebase/auth"
+import { handleSignUp } from "../firebase"
+import auth  from '../firebase';
+
 export const SignUp = () => {
     return (
         <div>
