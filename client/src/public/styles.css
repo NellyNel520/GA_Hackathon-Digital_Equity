@@ -4,4 +4,7 @@
     -moz-box-sizing: border-box;
   }
 
-  
+  body {
+    display: flex;
+    
+  }
