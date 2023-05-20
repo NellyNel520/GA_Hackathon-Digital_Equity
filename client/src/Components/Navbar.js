@@ -91,21 +91,15 @@ const Navbar = () =>{
 				<Link to={'/'}>
 					<MenuItem className="hover:text-white">HOME</MenuItem>
 				</Link>
-				<Link to={'/register'}>
+				<Link to={'/signUp'}>
 					<MenuItem className="hover:text-white">SIGNUP</MenuItem>
 				</Link>
-				<Link to={'/login'}>
+				<Link to={'/signIn'}>
 					<MenuItem className="hover:text-white">LOGIN</MenuItem>
 				</Link>
 				
 				
-				<Link to={'/cart'}>
-					<MenuItem className="hover:text-white">
-						{/* <Badge badgeContent={quantity} color="primary">
-							<ShoppingCartIcon />
-						</Badge> */}
-					</MenuItem>
-				</Link>
+				
 			</Right>
 		</Wrapper>
 
