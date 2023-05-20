@@ -18,7 +18,10 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app); 
-///////// LOGIN AND SIGNUP FUNCTIONS /////////////////
+
 
 
 export  { app, auth } ; 
+
+
+

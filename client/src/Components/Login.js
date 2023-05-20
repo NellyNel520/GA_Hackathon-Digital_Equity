@@ -1,5 +1,6 @@
 import react, { useState } from 'react';
 import {auth} from '../firebase';
+
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 
@@ -8,21 +9,23 @@ export const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = async () => {
-    try {
-        if (email !== '' && password !== '') {
-            await signInWithEmailAndPassword(auth, email, password);
-        }
-    } catch (error) {
-        console.log(error.message);
-    }
-  };
+  // const handleLogin = async () => {
+  //   try {
+  //       if (email !== '' && password !== '') {
+  //           await signInWithEmailAndPassword(auth, email, password);
+  //       }
+  //   } catch (error) {
+  //       console.log(error.message);
+  //   }
+  // };
   
 
   return (
     <div>
       <h1>Sign In</h1>
-      <form onSubmit={handleLogin}>
+      <form 
+      // onSubmit={handleLogin}
+      >
         <label>Email:</label>
         <input
           id='email'

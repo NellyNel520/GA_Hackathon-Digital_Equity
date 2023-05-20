@@ -1,4 +1,4 @@
-import "tailwindcss/tailwind.css";
+import { Route, Routes } from 'react-router-dom'
 import Header from './Components/Header';
 import { SignUp } from './Components/SignupForm';
 import { SignIn } from "./Components/Login";
@@ -11,10 +11,11 @@ function App() {
   
   return (
     <div className="App">
-      App
-      <Header/>
-      <SignUp/>
-      <SignIn />
+      {/* <Header/> */}
+      <Routes>
+        <Route path="/signIn" element={<SignIn />} />
+        <Route path="/signUp" element={<SignUp />} />
+      </Routes>
     </div>
   );
 }

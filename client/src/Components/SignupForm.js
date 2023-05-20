@@ -1,3 +1,4 @@
+
 import react, { useState } from 'react';
 import { createUserWithEmailAndPassword } from "firebase/auth"
 import { handleSignUp } from "../firebase"
@@ -33,63 +34,68 @@ export const SignUp = () => {
 
   };
 
-  return (
-    <div>
-      <h1>Sign Up</h1>
-      <form onSubmit={handleSignUp}>
-        <label>First Name:</label>
-        <input
-          id='firstname'
-          type='text'
-          name='fistname'
-          placeholder="Enter First Name"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-        />
-        <label>Last Name:</label>
-        <input
-          id='lastname'
-          type='text'
-          name="lastname"
-          placeholder="Enter Last Name"
-          onChange={(e) => setLastName(e.target.value)}
-          value={lastName}
-          required
 
-        />
-        <label>Email:</label>
-        <input
-          id='email'
-          type='text'
-          name="email"
-          value={email}
-          placeholder="Input Your Email"
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <label>Username:</label>
-        <input
-          id='username'
-          type='text'
-          name="username"
-          value={username}
-          placeholder="Enter Username"
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
+    return (
+        <div>
+          <h1>General Information</h1>
+          <form >
+              <label>Full Name</label>
+          <input
+              id='fullname'
+              type='text'
+              name='fullname'
+              placeholder="Full Name"
+            />
+            <label>Your Level of Education</label>
+          <input
+              id='education'
+              type='text'
+              name="education"
+              placeholder="Level of Education"
+              required
+            />
+            <label>State</label>
+             <input
+              id='state'
+              type='text'
+              name="state"
+              placeholder="State"
+              required
+            />
+            <label>Zip Code</label>
+            <input
+              id='zipcode'
+              type='text'
+              name="zipcode"
+              placeholder="Zipcode"
+              required
+            />
+           <label>Password</label>
+           <input
+              id='password'
+              type='text'
+              name="password"
+              placeholder="password"
+              required
+            />
+
         <label>Password</label>
-        <input
-          id='password'
-          type='password'
-          name="password"
-          placeholder="Password"
-          onChange={(e) => setPassword(e.target.value)}
-          value={password}
-          required
-        />
-
-        <button type="submit"> Sign Up! </button >
-      </form>
-    </div>
-  )
-}
+          <input
+              id='password'
+              type='password'
+              name="password"
+              placeholder="password"
+              required
+            />
+            <label>Confirm Password</label>
+             <input
+              id='conpassword'
+              type='password'
+              name="conpassword"
+              placeholder="conpassword"
+              required
+            />
+          </form>
+        </div>
+      )
+  };
