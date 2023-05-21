@@ -1,0 +1,94 @@
+.geninfo{
+   
+width: 406px;
+height: 60px;
+left: 641px;
+top: 365px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+
+align-items: center;
+text-align: center;
+
+color: #000000;
+}
+
+label{
+width: 108px;
+height: 32px;
+left: 437px;
+top: 456px;
+margin-top: 30px;
+/* Header/sub */
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 600;
+font-size: 23px;
+line-height: 32px;
+/* identical to box height, or 139% */
+display: flex;
+align-items: center;
+}
+
+input{
+    box-sizing: border-box;
+
+margin-top: 30px;
+height: 70px;
+left: 1291px;
+top: 488px;
+
+/* white */
+
+background: #FFFDFA;
+/* Black */
+
+border: 1px solid #293241;
+border-radius: 8px;
+
+}
+
+#fullname{
+    box-sizing: border-box;
+    width: 854px;
+
+}
+#education{
+    width: 417px;
+
+}
+#state{
+    width: 195px;
+}
+#zipcode{
+    width: 195px;
+}
+
+#email{
+    width: 854px;
+}
+
+#password, #conpassword{
+    width: 417px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+
+}
+.userinfo{
+    position: absolute;
+    
+align-items: center;
+text-align: center;
+margin-left: 600px;
+
+}

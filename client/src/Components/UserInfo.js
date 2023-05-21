@@ -3,6 +3,8 @@ import react, { useState } from 'react';
 import { createUserWithEmailAndPassword } from "firebase/auth"
 import { handleSignUp } from "../firebase"
 import  {auth}   from '../firebase';
+import '../Css/UserInfo.css'
+
 
 export const UserInfo = () => {
 
@@ -36,17 +38,17 @@ export const UserInfo = () => {
 
 
     return (
-        <div>
-          <h1>General Information</h1>
-          <form >
-              <label>Full Name</label>
+        <div className='userinfo'>
+          <h1 className='geninfo'>General Information</h1>
+          <form className='form'>
+              <label className='lfull'>Full Name</label>
           <input
               id='fullname'
               type='text'
               name='fullname'
               placeholder="Full Name"
             />
-            <label>Your Level of Education</label>
+            <label className='ledu'>Your Level of Education</label>
           <input
               id='education'
               type='text'
@@ -54,7 +56,7 @@ export const UserInfo = () => {
               placeholder="Level of Education"
               required
             />
-            <label>State</label>
+            <label className='lstate'>State</label>
              <input
               id='state'
               type='text'
@@ -62,7 +64,7 @@ export const UserInfo = () => {
               placeholder="State"
               required
             />
-            <label>Zip Code</label>
+            <label className='lzip'>Zip Code</label>
             <input
               id='zipcode'
               type='text'
@@ -70,24 +72,16 @@ export const UserInfo = () => {
               placeholder="Zipcode"
               required
             />
-           <label>Password</label>
+           <label className='lpass'>Password</label>
            <input
-              id='password'
-              type='text'
-              name="password"
-              placeholder="password"
-              required
-            />
-
-        <label>Password</label>
-          <input
               id='password'
               type='password'
               name="password"
               placeholder="password"
               required
             />
-            <label>Confirm Password</label>
+
+            <label className='conpass'>Confirm Password</label>
              <input
               id='conpassword'
               type='password'
