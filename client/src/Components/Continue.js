@@ -1,5 +1,7 @@
+import '../Css/Buttons.css'
+
 export const Continue = () => {
     <div>
-      <button>Continue</button>
+      <button className="continuebutton">Continue</button>
     </div>
   }
