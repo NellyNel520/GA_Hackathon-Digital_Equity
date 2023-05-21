@@ -1,31 +1,34 @@
+import React, { useContext, useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './Components/Navbar';
-
+import { AuthContext } from './AuthContext';
 import './index.css';
 import { Onboarding } from './Pages/Onboarding';
 import Home from './Pages/Home';
 import Footer from './Components/Footer';
 import SignIn2 from './Pages/SignIn2';
-
-
-
-
-
-
+import { auth, db, app } from './firebase'; 
 
 
 function App() {
 
+  const { user } = useContext(AuthContext) || {};
+
+ 
+
   return (
     <div className="App">
       <Navbar />
+      { user ? (
       <Routes>
         <Route path="/" element={<Home />} />
-       
-        <Route path="/signIn" element={<SignIn2 />} />
-       <Route path="/onboarding" element={<Onboarding />} />
-      
-      </Routes>
+       </Routes>
+      ) : (
+        <Routes>
+        <Route path="/signin" element={<SignIn2 />} />
+        <Route path='/signUp' element={<Onboarding />} />
+        </Routes>
+        )}
       <Footer />
     </div>
   );
