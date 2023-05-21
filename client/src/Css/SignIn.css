@@ -1,0 +1,173 @@
+.box{
+background-color: #E0FBFC;
+position: absolute;
+width: 645px;
+height: 928px;
+margin-left: 1174px;
+top: 95px;
+
+}
+
+.techsavvy{
+
+width: 430px;
+height: 49px;
+left: 107px;
+top: 81px;
+
+/* Page header */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 50px;
+line-height: 75px;
+
+align-items: center;
+text-align: center;
+}
+
+.welcomeback{
+    
+width: 234px;
+height: 32px;
+margin-left: 105px;
+margin-top: 112px;
+margin-bottom: 84px;
+
+/* Sub */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 32px;
+/* identical to box height, or 107% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Black */
+
+color: #293241;
+}
+
+#username{
+    box-sizing: border-box;
+    padding-left: 40px;
+
+width: 430px;
+height: 70px;
+left: 537px;
+margin-top: 46px;
+
+/* white */
+
+background: #FFFDFA;
+border: 1px solid #98C1D9;
+border-radius: 8px;
+
+}
+
+#password{
+    box-sizing: border-box;
+
+padding-left: 40px;
+width: 430px;
+height: 70px;
+left: 537px;
+margin-top: 21px;
+
+/* white */
+
+background: #FFFDFA;
+border: 1px solid #98C1D9;
+border-radius: 8px;
+
+}
+.two{
+    position:absolute;
+width: 430px;
+height: 666px;
+left: 107px;
+top: 81px;
+
+}
+button{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+
+width: 430px;
+height: 68px;
+left: 108px;
+margin-top: 51px;
+
+/* Dark blue */
+
+background: #3D5A80;
+border-radius: 8px;
+}
+
+.forgot{
+    
+margin-left: 17.6%;
+right: 27.91%;
+margin-top: 14.25%;
+bottom: 23.17%;
+
+/* light */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Orange */
+
+color: #EE6C4D;
+}
+
+.signin{
+    
+width: 320px;
+height: 30px;
+left: 161px;
+margin-top: 27px;
+
+/* light */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+/* or 120% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Black */
+
+color: #293241;
+}
+
+img{
+    position: absolute;
+width: 782px;
+height: 782px;
+margin-left: 92px;
+top: 176px;
+}

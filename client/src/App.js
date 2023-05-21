@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 
 
 
+
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signIn" element={<SignIn />} />
        <Route path="/onboarding" element={<Onboarding />} />
+     
       </Routes>
       <Footer />
     </div>
