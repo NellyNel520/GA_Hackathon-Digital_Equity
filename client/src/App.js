@@ -12,6 +12,8 @@ import SignIn2 from './Pages/SignIn2';
 
 
 
+
+
 function App() {
 
   return (
@@ -22,7 +24,7 @@ function App() {
        
         <Route path="/signIn" element={<SignIn2 />} />
        <Route path="/onboarding" element={<Onboarding />} />
-     
+      
       </Routes>
       <Footer />
     </div>
