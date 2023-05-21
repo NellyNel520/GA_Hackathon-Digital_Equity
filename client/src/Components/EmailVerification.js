@@ -1,4 +1,6 @@
 import '../Css/EmailVerification.css'
+import { Back } from './Back'
+import { Continue } from './Continue'
 
 export const EmailVerification=()=>{
     return(
@@ -10,6 +12,8 @@ export const EmailVerification=()=>{
                 <input id='code'/>
             </form>
             <h4 className="newcode">Alternatively, if you not recieved a code, we can resend a new one. Click Here</h4>
+            <Back/>
+            <Continue/>
         </div>
     )
 }

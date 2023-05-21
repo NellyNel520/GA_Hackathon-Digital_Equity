@@ -1,4 +1,7 @@
 import '../Css/HowTech.css'
+import { Back } from './Back'
+import { Continue } from './Continue'
+
 
 export const HowTech= () =>{
     return(
@@ -12,8 +15,10 @@ export const HowTech= () =>{
             <button className="options">BEGINNER</button>
             <button className="options">INTERMEDIATE</button>
             <button className="options">ADVANCED</button>
+            <Back/>
+            <Continue/>
             </div>
         </div>
 
     )
-}
+};
