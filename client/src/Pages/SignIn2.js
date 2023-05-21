@@ -1,9 +1,11 @@
-import React from 'react'
-import { auth } from '../firebase'
-import { signInWithEmailAndPassword } from 'firebase/auth'
-import '../Css/SignIn.css'
-import { useState } from 'react'
-import logo1 from '../assets/11.png'
+import React from 'react';
+import { auth } from '../firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import '../Css/SignIn.css';
+import { useState } from 'react';
+import logo1 from '../assets/11.png';
+import { Link } from 'react-router-dom';
+import { Onboarding } from './Onboarding';
 
 const SignIn2 = () => {
 	const [email, setEmail] = useState('')
@@ -56,7 +58,7 @@ const SignIn2 = () => {
             <button className="signInBtn bg-[#3D5A80] mb-2" onClick={handleLogin}>Log In</button>
             <div className='text-center ml-[6rem] mt-10'>
             <h1 className='text-orange-500'>Forgot username/password?</h1>
-            <h1 className=''>Don't have an account? <span className='text-orange-500'>Sign up.</span></h1>
+            <h1 className=''>Don't have an account?<Link to="/onboarding"> <span className='text-orange-500'>Sign up.</span></Link></h1>
             </div>
             
             </form>
