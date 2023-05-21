@@ -2,6 +2,7 @@ import '../Css/HowTech.css'
 import { Back } from './Back'
 import { Continue } from './Continue'
 
+
 export const HowTech= () =>{
     return(
         <div className='howtech'>
@@ -20,4 +21,4 @@ export const HowTech= () =>{
         </div>
 
     )
-}
+};
