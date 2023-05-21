@@ -4,6 +4,8 @@ import { SignIn } from "./Pages/SignIn";
 import './index.css';
 import { Onboarding } from './Pages/Onboarding';
 import Home from './Pages/Home';
+import Footer from './Components/Footer';
+
 
 
 
@@ -18,6 +20,7 @@ function App() {
         <Route path="/signIn" element={<SignIn />} />
        <Route path="/onboarding" element={<Onboarding />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

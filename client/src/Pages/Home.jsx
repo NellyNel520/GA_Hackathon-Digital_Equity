@@ -5,7 +5,7 @@ import Promo from '../Components/Promo'
 
 const Home = () => {
   return (
-    <div>
+    <div className='100vh'>
       <Header />
       <Courses />
       <Promo />
