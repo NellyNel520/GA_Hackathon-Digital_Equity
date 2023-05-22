@@ -3,7 +3,7 @@ import { Back } from './Back'
 import { Continue } from './Continue'
 
 
-export const HowTech= () =>{
+export const HowTech= ({ onContinue }) =>{
     return(
         <div className='howtech'>
             <h1 className="pagehead">How tech savy are you?</h1>
@@ -12,9 +12,12 @@ export const HowTech= () =>{
             <h3 className="age13">Ages13+</h3>
             </div>
             <div className='optionbuttons'>
-            <button className="options">BEGINNER</button>
-            <button className="options">INTERMEDIATE</button>
-            <button className="options">ADVANCED</button>
+            <button className="options"
+            onClick={onContinue}>BEGINNER</button>
+            <button className="options"
+            onClick={onContinue}>INTERMEDIATE</button>
+            <button className="options"
+            onClick={onContinue}>ADVANCED</button>
             <Back/>
             <Continue/>
             </div>

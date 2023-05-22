@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { UserInfo } from '../Components/UserInfo';
-import { FirstSignup } from '../Components/FirstSignup';
+import  SignUp  from '../Pages/SignUp';
+import { HowTech } from '../Components/HowTech';
 import { EmailVerification } from '../Components/EmailVerification';
 
 
@@ -13,9 +14,10 @@ export const Onboarding = () => {
 
     return (
         <>
-            {step === 1 && <FirstSignup onContinue={handleContinue} />}
-            {step === 2 && <UserInfo onContinue={handleContinue} />}
+            {step === 1 && <SignUp onContinue={handleContinue} />}
+            {step === 2 && <HowTech onContinue={handleContinue} />}
             {step === 3 && <EmailVerification onContinue={handleContinue}/>}
+            {step === 4 && <UserInfo onContinue={handleContinue} />}
         </>
 
     )

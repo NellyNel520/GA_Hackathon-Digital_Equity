@@ -1,9 +1,14 @@
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
 .emailver{
-    position: absolute;
-width: 352px;
-height: 60px;
-left: 692px;
-top: 357px;
+    /* position: absolute; */
+/* width: 75em;
+height: 60px; */
+/* left: 692px;
+top: 357px; */
 
 font-family: 'Poppins';
 font-style: normal;
@@ -21,11 +26,11 @@ color: #293241;
 }
 
 .code{
-    position: absolute;
-width: 793px;
+    /* position: absolute; */
+/* width: 793px;
 height: 64px;
 left: 509px;
-top: 452px;
+top: 452px; */
 
 /* Header/sub */
 
@@ -43,11 +48,11 @@ color: #000000;
 }
 
 .concode{
-    position: absolute;
-width: 196px;
+    /* position: absolute; */
+/* width: 196px;
 height: 32px;
 left: 509px;
-top: 553px;
+top: 553px; */
 
 /* Header/sub */
 
@@ -68,7 +73,7 @@ color: #293241;
 #code{
     box-sizing: border-box;
 
-position: relative;
+/* position: relative; */
 width: 417px;
 height: 70px;
 margin-right: 800px;
@@ -83,7 +88,7 @@ border-radius: 8px;
 
 
 .newcode{
-    position: absolute;
+    /* position: absolute; */
 width: 824px;
 height: 30px;
 left: 509px;
