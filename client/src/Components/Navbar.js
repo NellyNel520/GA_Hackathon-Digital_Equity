@@ -88,10 +88,10 @@ const Navbar = () =>{
             </Center>
 
 			<Right>
-				<Link to={'/home'}>
+				<Link to={'/'}>
 					<MenuItem className="hover:text-white">HOME</MenuItem>
 				</Link>
-				<Link to={'/signUp'}>
+				<Link to={'/onboarding'}>
 					<MenuItem className="hover:text-white">SIGNUP</MenuItem>
 				</Link>
 				<Link to={'/signIn'}>

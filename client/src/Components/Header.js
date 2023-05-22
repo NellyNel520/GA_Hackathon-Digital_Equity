@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import MaskGroup from '../assets/MaskGroup.png'
+import HomePageImage from '../assets/HomePageImage.png';
 
 const Container = styled.div`
 	width: 100vw;
@@ -29,7 +30,7 @@ const Header = () => {
 					</div>
 
 					<div>
-						<img src={MaskGroup} alt="ll" />
+						<img src={HomePageImage} alt="ll" />
 					</div>
           
 				</div>
