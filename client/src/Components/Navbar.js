@@ -88,7 +88,7 @@ const Navbar = () =>{
             </Center>
 
 			<Right>
-				<Link to={'/'}>
+				<Link to={'/home'}>
 					<MenuItem className="hover:text-white">HOME</MenuItem>
 				</Link>
 				<Link to={'/signUp'}>
