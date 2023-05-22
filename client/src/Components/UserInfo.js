@@ -28,7 +28,7 @@ export const UserInfo = () => {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const newUser = userCredential.user;
         setUser(newUser);
-        console.log('User Signd up:', newUser);
+        console.log('User Signed up:', newUser);
       }
     } catch (error) {
       console.error(error.message);
@@ -39,6 +39,7 @@ export const UserInfo = () => {
 
 
     return (
+      <div className='container'>
         <div className='userinfo'>
           <h1 className='geninfo'>General Information</h1>
           <form className='form'>
@@ -73,12 +74,24 @@ export const UserInfo = () => {
               placeholder="Zipcode"
               required
             />
+            <label className='lemail'>Email</label>
+            <input
+              id='email'
+              type='text'
+              name="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
            <label className='lpass'>Password</label>
            <input
               id='password'
               type='password'
               name="password"
               placeholder="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
 
@@ -95,6 +108,7 @@ export const UserInfo = () => {
           </form>
           <Back/>
           <Continue/>
+        </div>
         </div>
       )
   };

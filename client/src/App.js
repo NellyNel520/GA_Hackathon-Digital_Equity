@@ -21,20 +21,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      { user ? (
-      <Routes>
-        <Route path="/" element={<Home />} />
-
-       </Routes>
-      ) : (
-        <Routes>
+      <Routes
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn2 />} />
+        <Route path='/onboarding' element={<Onboarding />} />
         <Route path="/signUp" element={<SignUp />} />
-        {/* <Route path='/signUp' element={<Onboarding />} /> */}
         </Routes>
-        )}
-
       <Footer />
     </div>
   );
