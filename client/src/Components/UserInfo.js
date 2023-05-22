@@ -27,7 +27,7 @@ export const UserInfo = () => {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const newUser = userCredential.user;
         setUser(newUser);
-        console.log('User Signd up:', newUser);
+        console.log('User Signed up:', newUser);
       }
     } catch (error) {
       console.error(error.message);
@@ -38,6 +38,7 @@ export const UserInfo = () => {
 
 
     return (
+      <div className='container'>
         <div className='userinfo'>
           <h1 className='geninfo'>General Information</h1>
           <form className='form'>
@@ -91,6 +92,7 @@ export const UserInfo = () => {
             />
             <button>Submit</button>
           </form>
+        </div>
         </div>
       )
   };

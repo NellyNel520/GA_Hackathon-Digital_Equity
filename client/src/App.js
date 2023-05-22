@@ -26,7 +26,7 @@ function App() {
       ) : (
         <Routes>
         <Route path="/signin" element={<SignIn2 />} />
-        <Route path='/signUp' element={<Onboarding />} />
+        <Route path='/onboarding' element={<Onboarding />} />
         </Routes>
         )}
       <Footer />
