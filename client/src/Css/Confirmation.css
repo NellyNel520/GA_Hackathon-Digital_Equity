@@ -1,0 +1,25 @@
+.picture{
+    position: absolute;
+width: 28rem;
+height: 28rem;
+left: 634px;
+top: 369px;
+}
+
+.wait{
+    position: absolute;
+width: 45rem;
+height: 1.938rem;
+left: 509px;
+top: 858px;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 31px;
+display: flex;
+align-items: center;
+
+color: #000000;
+}

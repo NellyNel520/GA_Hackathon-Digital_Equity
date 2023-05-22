@@ -1,5 +1,7 @@
+import '../Css/Buttons.css'
+
 export const Back = () => {
     <div>
-      <button>Back</button>
+      <button className="backbutton">Back</button>
     </div>
   }
