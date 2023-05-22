@@ -1,11 +1,11 @@
 
 import react, { useState } from 'react';
 import { createUserWithEmailAndPassword } from "firebase/auth"
-import { handleSignUp } from "../firebase"
 import  {auth}   from '../firebase';
 import '../Css/UserInfo.css'
 import {Back} from '../Components/Back'
 import { Continue } from '../Components/Continue';
+import { useNavigate } from 'react-router-dom';
 
 export const UserInfo = () => {
 
@@ -16,7 +16,7 @@ export const UserInfo = () => {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState(null); 
   
-
+const navigate = useNavigate();
 
   const handleSignUp = async (e) => {
 
@@ -29,6 +29,7 @@ export const UserInfo = () => {
         const newUser = userCredential.user;
         setUser(newUser);
         console.log('User Signed up:', newUser);
+        navigate('/');
       }
     } catch (error) {
       console.error(error.message);
@@ -42,7 +43,7 @@ export const UserInfo = () => {
       <div className='container'>
         <div className='userinfo'>
           <h1 className='geninfo'>General Information</h1>
-          <form className='form'>
+          <form className='form' onSubmit={handleSignUp}>
               <label className='lfull'>Full Name</label>
           <input
               id='fullname'
