@@ -4,7 +4,8 @@ import { createUserWithEmailAndPassword } from "firebase/auth"
 import { handleSignUp } from "../firebase"
 import  {auth}   from '../firebase';
 import '../Css/UserInfo.css'
-
+import {Back} from '../Components/Back'
+import { Continue } from '../Components/Continue';
 
 export const UserInfo = () => {
 
@@ -103,7 +104,10 @@ export const UserInfo = () => {
               required
             />
             <button>Submit</button>
+            
           </form>
+          <Back/>
+          <Continue/>
         </div>
         </div>
       )

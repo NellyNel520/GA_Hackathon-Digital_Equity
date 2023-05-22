@@ -7,7 +7,9 @@ import { Onboarding } from './Pages/Onboarding';
 import Home from './Pages/Home';
 import Footer from './Components/Footer';
 import SignIn2 from './Pages/SignIn2';
+import SignUp from './Pages/SignUp';
 import { auth, db, app } from './firebase'; 
+
 
 
 function App() {
@@ -19,16 +21,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      { user ? (
-      <Routes>
+      <Routes
         <Route path="/" element={<Home />} />
-       </Routes>
-      ) : (
-        <Routes>
         <Route path="/signin" element={<SignIn2 />} />
         <Route path='/onboarding' element={<Onboarding />} />
+        <Route path="/signUp" element={<SignUp />} />
         </Routes>
-        )}
       <Footer />
     </div>
   );
