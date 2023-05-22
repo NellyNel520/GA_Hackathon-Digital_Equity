@@ -103,7 +103,7 @@ export const UserInfo = () => {
               placeholder="conpassword"
               required
             />
-            <button>Submit</button>
+            <button className='submit'>Submit</button>
             
           </form>
           <Back/>

@@ -93,3 +93,11 @@ form {
   /* text-align: center; */
 
 }
+
+
+.submit{
+  background: #3D5A80;
+  border-radius: 8px;
+  padding: 15px 30px 15px 30px ;
+  margin-top: 1rem;
+}
