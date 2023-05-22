@@ -8,6 +8,7 @@ import Home from './Pages/Home';
 import Footer from './Components/Footer';
 import HomeLogin from './Pages/HomeLogin';
 import { auth, db, app } from './firebase'; 
+import { UserInfo } from './Components/UserInfo';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" user={user} element={<Home />} />
         <Route path="/signin" user={user} element={<HomeLogin />} />
         <Route path='/signUp' user={user} element={<Onboarding />} />
+        <Route path='/user' element={<UserInfo/>}/>
         </Routes>
       <Footer />
     </div>

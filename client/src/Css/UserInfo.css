@@ -1,6 +1,6 @@
 .geninfo {
-  width: 406px;
-  height: 60px;
+  width: 25rem;
+  height: 3.75rem;
   left: 641px;
   top: 365px;
 
@@ -24,7 +24,8 @@ label {
   top: 456px;
   margin-top: 30px; */
   /* Header/sub */
-
+  margin-right: 10px;
+  margin-top: 18px;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
@@ -37,12 +38,14 @@ label {
 
 input {
   box-sizing: border-box;
-
+  display: flex;
+  flex-wrap: wrap;
   /* margin-top: 30px; */
   padding: 1rem;
-  height: 70px;
+  height: 4.375;
   left: 1291px;
-  top: 488px;
+  margin-top: 18px;
+  margin-right: 10px;
 
   /* white */
 
@@ -55,38 +58,38 @@ input {
 
 #fullname {
   box-sizing: border-box;
-  width: 854px;
+  width: 38rem;
 }
 #education {
-  width: 417px;
+  width: 25rem;
 }
 #state {
-  width: 195px;
+  width: 13rem;
 }
 #zipcode {
-  width: 195px;
+  width: 12rem;
 }
 
 #email {
-  width: 854px;
+  width: 43rem;
 }
 
 #password,
 #conpassword {
-  width: 417px;
+  width: 22rem;
 }
 form {
   display: flex;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
+  
+  flex-wrap: wrap; 
   /* position: absolute; */
 }
 .userinfo {
-  display: flex;
+  padding: 5rem;
   flex-direction: 'column';
   justify-content: flex-start;
   /* position: absolute; */
 
   /* text-align: center; */
-  margin-left: 10px;
+
 }
