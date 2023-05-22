@@ -73,12 +73,24 @@ export const UserInfo = () => {
               placeholder="Zipcode"
               required
             />
+            <label className='lemail'>Email</label>
+            <input
+              id='email'
+              type='text'
+              name="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
            <label className='lpass'>Password</label>
            <input
               id='password'
               type='password'
               name="password"
               placeholder="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
 
